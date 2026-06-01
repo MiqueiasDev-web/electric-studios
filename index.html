@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electric Studios | Art & Code</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes spin-slow {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .animate-spin-slow {
+        animation: spin-slow 2s linear infinite;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[#0b0c10] text-slate-300 font-sans antialiased selection:bg-cyan-500 selection:text-black"
+  >
+    <header
+      class="sticky top-0 z-50 flex items-center justify-between px-6 py-4 border-b border-slate-800 bg-[#0b0c10]/95 backdrop-blur-md md:px-16"
+    >
+      <div class="flex items-center space-x-3">
+        <img
+          src="favicon.png"
+          alt="Electric Studios Mini Logo"
+          class="w-8 h-8 rounded-full"
+        />
+        <div
+          class="text-xl font-bold tracking-wider text-white md:block hidden"
+        >
+          Electric<span class="text-cyan-400">Studios</span>
+        </div>
+      </div>
+      <nav class="flex items-center space-x-4 md:space-x-8">
+        <a href="#sobre" class="transition-colors hover:text-cyan-400">Sobre</a>
+        <a href="#servicos" class="transition-colors hover:text-cyan-400"
+          >O que fazemos</a
+        >
+        <a href="#projetos" class="transition-colors hover:text-cyan-400"
+          >Projetos</a
+        >
+        <a
+          href="#contato"
+          class="px-4 py-2 text-sm font-medium transition-all border-2 rounded-md border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black"
+        >
+          Contato
+        </a>
+      </nav>
+    </header>
+
+    <section
+      class="relative flex items-center justify-center min-h-[85vh] px-4 py-12 text-center bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-slate-900 via-[#0b0c10] to-[#0b0c10]"
+    >
+      <div class="max-w-3xl flex flex-col items-center">
+        <div class="mb-6 max-w-xl w-full p-4">
+          <img
+            src="logo-banner.png"
+            alt="Electric Studios Banner"
+            class="w-full h-auto object-contain invert brightness-200 contrast-125"
+          />
+        </div>
+
+        <p class="mb-8 text-lg text-slate-400 md:text-xl max-w-2xl">
+          Transformando ideias complexas em experiências digitais
+          impressionantes. Desenvolvemos soluções robustas com design de ponta.
+        </p>
+        <a
+          href="#contato"
+          class="inline-block px-8 py-3 font-bold text-white transition-all transform rounded-full bg-gradient-to-r from-cyan-500 to-fuchsia-600 hover:scale-105 shadow-[0_4px_20px_rgba(34,211,238,0.3)] hover:shadow-[0_6px_25px_rgba(217,70,239,0.5)]"
+        >
+          Vamos Conversar?
+        </a>
+      </div>
+    </section>
+
+    <section
+      id="sobre"
+      class="px-6 py-20 text-center md:px-32 max-w-5xl mx-auto"
+    >
+      <h2 class="mb-6 text-3xl font-bold text-white md:text-4xl">Sobre Nós</h2>
+      <p class="text-lg leading-relaxed text-slate-400">
+        A Electric Studios é um hub criativo e tecnológico onde a engenharia de
+        software encontra o design de interface. Criamos produtos digitais que
+        não apenas funcionam perfeitamente, mas também encantam visualmente.
+      </p>
+    </section>
+
+    <section id="servicos" class="px-6 py-20 bg-[#12141c] text-center md:px-16">
+      <h2 class="mb-12 text-3xl font-bold text-white md:text-4xl">
+        O Que Fazemos
+      </h2>
+      <div class="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+        <div
+          class="w-full sm:w-[350px] bg-slate-900 p-8 rounded-xl border border-transparent hover:border-cyan-400 transition-all transform hover:-translate-y-1 text-left shadow-lg"
+        >
+          <div class="mb-4 text-4xl">💻</div>
+          <h3 class="mb-3 text-xl font-bold text-white">Code</h3>
+          <p class="text-slate-400 leading-relaxed">
+            Desenvolvimento web moderno, sistemas sob medida, aplicativos
+            responsivos e performance otimizada para o seu negócio.
+          </p>
+        </div>
+        <div
+          class="w-full sm:w-[350px] bg-slate-900 p-8 rounded-xl border border-transparent hover:border-fuchsia-500 transition-all transform hover:-translate-y-1 text-left shadow-lg"
+        >
+          <div class="mb-4 text-4xl">🎨</div>
+          <h3 class="mb-3 text-xl font-bold text-white">Art</h3>
+          <p class="text-slate-400 leading-relaxed">
+            Design de Interface (UI/UX), identidade visual marcante,
+            prototipagem e experiências visuais que conectam marcas a pessoas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="px-6 py-20 text-center md:px-16">
+      <h2 class="mb-6 text-3xl font-bold text-white md:text-4xl">
+        Projetos Atuais
+      </h2>
+      <div
+        class="max-w-2xl px-6 py-12 mx-auto border-2 border-dashed rounded-2xl border-slate-800 bg-[#12141c]"
+      >
+        <div
+          class="w-10 h-10 mx-auto mb-6 rounded-full border-4 border-cyan-400/10 border-t-cyan-400 animate-spin-slow"
+        ></div>
+        <h3 class="mb-2 text-xl font-bold text-white">
+          Área em Desenvolvimento
+        </h3>
+        <p class="text-slate-400">
+          Estamos preparando três portfólios incríveis para mostrar do que somos
+          capazes. Volte em breve!
+        </p>
+      </div>
+    </section>
+
+    <footer
+      id="contato"
+      class="px-6 py-16 text-center border-t border-slate-900 bg-[#0b0c10] md:px-16"
+    >
+      <div class="flex justify-center mb-6">
+        <img
+          src="favicon.png"
+          alt="Electric Studios Logo"
+          class="w-16 h-16 rounded-full border border-slate-800"
+        />
+      </div>
+      <h2 class="mb-4 text-3xl font-bold text-white md:text-4xl">
+        Conecte-se Conosco
+      </h2>
+      <p class="mb-8 text-slate-400">
+        Tem um projeto em mente? Entre em contato e vamos dar vida à sua ideia.
+      </p>
+
+      <div class="flex justify-center mb-8">
+        <a
+          href="https://wa.me/5591982039712"
+          target="_blank"
+          class="px-6 py-3 font-semibold transition-colors rounded-lg bg-slate-900 text-cyan-400 hover:bg-slate-800 border border-slate-800"
+        >
+          📞 WhatsApp: (91) 98203-9712
+        </a>
+      </div>
+
+      <p
+        class="mb-3 text-sm tracking-wider uppercase text-slate-500 font-semibold"
+      >
+        E-mails de contato
+      </p>
+      <div class="flex flex-wrap justify-center gap-4 mb-10">
+        <a
+          href="mailto:miqueiasmartins494@gmail.com"
+          class="px-5 py-2.5 text-sm transition-colors rounded-md bg-[#12141c] text-fuchsia-400 hover:bg-slate-900 border border-slate-800"
+        >
+          miqueiasmartins494@gmail.com
+        </a>
+        <a
+          href="mailto:electricstudio460@gmail.com"
+          class="px-5 py-2.5 text-sm transition-colors rounded-md bg-[#12141c] text-fuchsia-400 hover:bg-slate-900 border border-slate-800"
+        >
+          electricstudio460@gmail.com
+        </a>
+      </div>
+
+      <div class="flex justify-center gap-6 mb-12 text-sm">
+        <a href="#" class="transition-colors hover:text-cyan-400">Instagram</a>
+        <a href="#" class="transition-colors hover:text-cyan-400">LinkedIn</a>
+        <a href="#" class="transition-colors hover:text-cyan-400">GitHub</a>
+      </div>
+
+      <p class="text-xs text-slate-600">
+        &copy; 2026 Electric Studios. Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
