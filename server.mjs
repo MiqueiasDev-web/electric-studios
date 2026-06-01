@@ -40,6 +40,8 @@ const server = createServer(async (req, res) => {
   }
 });
 
-server.listen(3000, "127.0.0.1", () => {
-  console.log("Servidor rodando em http://127.0.0.1:3000");
+const PORT = process.env.PORT || 3000;
+
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`Servidor da Electric Studios rodando com sucesso!`);
 });
